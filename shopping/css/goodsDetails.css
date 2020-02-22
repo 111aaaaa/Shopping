@@ -1,0 +1,247 @@
+.conter{
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-top: 170px;
+}
+.conter .conter_l {
+    width: 580px;
+    height: 500px;
+    /*border: 1px solid red;*/
+    float: left;
+}
+
+
+.conter .conter_l .vv{
+    margin-left: 90px;
+    margin-bottom: -16px;
+}
+.conter .conter_l .vv span{
+    display: inline-block;
+   font-size: 14px;
+}
+
+#exzoom {
+    width: 400px;
+
+    margin: 20px auto;
+}
+.conter .conter_r{
+width: 617px;
+    height: 500px;
+    /*border: 1px solid yellow;*/
+    float: right;
+}
+.conter .conter_r .conter_r_c{
+    margin-top: 30px;
+    font-weight: bolder;
+    font-size: 18px;
+}
+.conter .conter_r .conter_r_z{
+ font-size: 14px;
+    color: #ccc;
+    margin-top: 5px;
+}
+.conter .conter_r .conter_r_x{
+    display: inline-block;
+    margin-top: 5px;
+}
+.conter .conter_r .conter_r_x .conter_r_x_c{
+    display: inline-block;
+    font-size: 14px;
+    color: red;
+    border-left: 2px solid red;
+}
+.conter .conter_r .conter_r_x .conter_r_x_b{
+    display: inline-block;
+    font-size: 14px;
+    margin-left: 5px;
+}
+.conter .conter_r .conter_r_p{
+    margin-top: 5px;
+}
+.conter .conter_r .conter_r_p span:nth-child(1){
+    color: red;
+    font-size: 18px;
+}
+.conter .conter_r .conter_r_p span:nth-child(2){
+    color: #ccc;
+    text-decoration: line-through;
+}
+.conter .conter_r .conter_r_v{
+    margin-top: 5px;
+}
+.conter .conter_r .conter_r_v span:nth-child(1){
+    color: #ccc;
+}
+.conter .conter_r .conter_r_v span:nth-child(2){
+    color: #0d2347;
+    font-size: 17px;
+}
+.conter .conter_r .size{
+    margin-top: 25px;
+}
+.conter .conter_r .size .size_z{
+    color: #cccccc;
+
+}
+.conter .conter_r .size .siza_chose{
+cursor: pointer;
+}
+.red{
+    color: red !important;
+}
+.conter .conter_r .siza_chose li:nth-child(1){
+    color: red;
+}
+.conter .conter_r .size .siza_chose li{
+    list-style: none;
+    width: 200px;
+    height: 30px;
+    border: 1px solid #ccc;
+    display: inline-block;
+    margin-top: 10px;
+    color: #cccccc;
+}
+.conter .conter_r .number{
+    margin-top: 20px;
+    color:  #ccc
+}
+.conter .conter_r .number span{
+    color: black;
+    font-weight: bolder;
+}
+.conter .conter_r .addInput{
+
+    margin-top: 20px;
+}
+.conter .conter_r .addInput button{
+    width: 20px;
+    cursor: pointer;
+}
+.conter .conter_r .addInput input{
+    width: 60px;
+    text-align: center;
+}
+.conter .conter_r  .addButton{
+    cursor: pointer;
+    margin-top: 30px;
+}
+.conter .conter_r  .addButton span{
+    display: inline-block;
+    width: 280px;
+    height: 40px;
+    border: 1px solid black;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 5px;
+    color: #999999;
+    font-weight: 400;
+}
+.conter .conter_r  .addButton span:nth-child(2){
+    background-color: #0d2347;
+}
+.showdea{
+    width: 450px;
+    /*height: 260px;*/
+    border-top: 1px solid #ccc;
+    margin-left: 115px;
+    margin-top: 20px;
+
+}
+.showdea span{
+    display: inline-block;
+    font-size: 14px;
+    color: #cccccc;
+    margin-top: 10px;
+
+}
+.showdea span:nth-child(2){
+    cursor: pointer;
+    float: right;
+}
+.showdea .showdea_ul{
+    list-style: none;
+    font-size: 12px;
+    color: #cccccc;
+    margin-left: 15px;
+    margin-top: 15px;
+    display: none;
+}
+.showdea .showdea_ul li{
+    padding: 5px 0;
+}
+.showdea span:nth-child(2) .plus2{
+    display: none;
+}
+.xidi{
+    width: 450px;
+    /*height: 260px;*/
+    border-top: 1px solid #ccc;
+    margin-left: 115px;
+    margin-top: 20px;
+}
+.xidi span{
+    font-size: 14px;
+    color: #cccccc;
+    margin-top: 10px;
+}
+.xidi span:nth-child(2){
+    cursor: pointer;
+    float: right;
+}
+.xidi span:nth-child(2) .plus2{
+    display: none;
+}
+.xidi .xidi_ul{
+    list-style: none;
+    font-size: 12px;
+    color: #cccccc;
+    margin-left: 15px;
+    margin-top: 15px;
+    display: none;
+}
+.xidi .xidi_ul li{
+    padding: 5px 0;
+}
+.zhifu{
+    width: 450px;
+    /*height: 260px;*/
+    border-top: 1px solid #ccc;
+    margin-left: 115px;
+    margin-top: 20px;
+}
+.zhifu span{
+    font-size: 14px;
+    color: #cccccc;
+    margin-top: 10px;
+}
+.zhifu span:nth-child(2){
+    cursor: pointer;
+    float: right;
+}
+.zhifu span:nth-child(2) .plus2{
+    display: none;
+}
+.zhifu .zhifu_ul{
+    list-style: none;
+    font-size: 12px;
+    color: #cccccc;
+    margin-left: 15px;
+    margin-top: 15px;
+    display: none;
+}
+.zhifu .zhifu_ul li{
+    padding: 5px 0;
+}
+.like{
+ margin-top: 40px;
+    width: 1200px;
+    text-align: center;
+}
+.like span{
+    display: inline-block;
+    font-size: 20px;
+
+
+}

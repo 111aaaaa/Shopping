@@ -1,0 +1,144 @@
+.headerBottom .list_ul li{
+    padding: 5px 0;
+    font-size: 14px;
+    cursor: pointer;
+}
+.header{
+ position: fixed;
+    width: 100%;
+    background-color: #ffffff;
+    top: 0;
+    z-index: 11;
+
+}
+.headerTop{
+    height: 30px;
+    background-color: #0d2347;
+    line-height: 30px;
+    /* width: 1300px; */
+}
+.headerTop .left{
+    float: left;
+    margin-left: -18px;
+}
+.headerTop1{
+    width: 1200px;
+    margin: 0 auto;
+}
+.headerTop .left{
+    color: #fff;
+    font-weight: bold;
+}
+.headerTop .left span:nth-child(1){
+    margin-left: 20px;
+    font-size: 19px;
+}
+.headerTop .left span:nth-child(2){
+    margin-left: 10px;
+    font-size: 16px;
+}
+.headerTop .right{
+    float: right;
+    color: #fff;
+    margin-right: 5px;
+}
+.headerTop .right span:nth-child(2){
+    margin-right: 20px;
+}
+.headerTop .right span{
+    margin-left: 5px;
+}
+.headerBottom{
+    max-width: 1200px;
+    height: 74px;
+    /* background: aqua; */
+    margin-top: 20px;
+    margin: 0 auto;
+}
+.headerBottomL{
+    /* position: relative; */
+    margin-top: 20px;
+}
+.headerBottomL img{
+    height: 74px;
+    position: absolute;
+    left: 50%;
+    margin-left: -115px;
+}
+.headerBottomR{
+    position: absolute;
+    right: 72px;
+
+}
+.headerBottomR_t{
+    float: right;
+    position: fixed;
+    width: 300px
+}
+
+
+
+.headerBottomR_t span:nth-child(2){
+    margin-left: 5px;
+}
+ .headerBottomR_t  span:nth-child(1):hover .clist{
+    display: block!important;
+}
+.headerBottomR_t .clist li{
+    padding: 5px 0;
+}
+.headerBottomR_b{
+
+    margin-top: 28px;
+    border-bottom: 1px solid black;
+    width: 200px;
+}
+.headerBottomR_b input{
+    border: none;
+    outline: none;
+}
+.comNav{
+
+}
+.comNav .comNavcon{
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 140px;
+    /* position: relative; */
+}
+.comNav .comNavcon span{
+    margin-left: 88px;
+    cursor: pointer;
+}
+.comNav .comNavcon .comNav_span{
+    margin-left: 0 !important;
+
+}
+.shhii{
+    margin-top: 20px;
+    border-top: 1px solid black;
+    display: none;
+}
+.comNav  .shhi{
+    width: 400px;
+    margin: 0 auto;
+}
+.comNav  .shhi .shhi_ul{
+    margin-top: 22px;
+    display: inline-block;
+    float: left;
+}
+.comNav  .shhi .shhi_ul li{
+    list-style: none;
+    margin-top: 15px;
+
+}
+.comNav  .shhi img{
+    display: inline-block;
+    margin-top: 40px;
+    margin-left: 23px;
+}
+
+
+
+

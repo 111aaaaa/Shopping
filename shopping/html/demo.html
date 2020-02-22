@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
+</head>
+<body>
+<ul class="contaier">
+    <li>1</li>
+</ul>
+<button id="btn">按钮</button>
+
+<ul class="contaier1">
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+</ul>
+<button id="btn1">按钮1</button>
+
+</body>
+<script>
+    var  i = 1
+    $("#btn").click(function () {
+        i +=1;
+         $(".contaier").append("<li>"+i+"</li>")
+    })
+    // $("#btn1").click(function () {
+    //     $(".contaier1").empty();
+    //     for( var i = 5;i<9;i++){
+    //         $(".contaier1").append("<li>"+i+"</li>")
+    //     }
+    // })
+    $("#btn1").click(function () {
+         $(".contaier1").find("li").remove();
+        for( var i = 5;i<9;i++){
+            $(".contaier1").append("<li>"+i+"</li>")
+        }
+    })
+
+</script>
+</html>

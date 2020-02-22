@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="../plugin/exzoom/jquery.exzoom.css">
+    <link rel="stylesheet" href="../css/goodsDetails.css">
+
+    <script src="../plugin/jquery-1.11.3.js"></script>
+    <script src="../plugin/exzoom/jquery.exzoom.js"></script>
+
+</head>
+
+<body>
+<div class="header"></div>
+<div class="conter">
+
+    <div class="conter_l">
+        <div class="vv">
+            <span>女装 > 卫衣 > 女装|保暖加绒圆领套头卫衣</span>
+        </div>
+        <div class="exzoom" id="exzoom">
+            <!--大图区域-->
+            <div class="exzoom_img_box">
+                <ul class='exzoom_img_ul'>
+                    <li><img src="../img/fdj/a1.png"/></li>
+                    <li><img src="../img/fdj/a2.png"/></li>
+                    <li><img src="../img/fdj/a3.png"/></li>
+                    <li><img src="../img/fdj/a4.png"/></li>
+                    <li><img src="../img/fdj/a5.png"/></li>
+                    <li><img src="../img/fdj/a1.png"/></li>
+                    <li><img src="../img/fdj/a2.png"/></li>
+                    <li><img src="../img/fdj/a3.png"/></li>
+                </ul>
+            </div>
+            <!--缩略图导航-->
+            <div class="exzoom_nav"></div>
+            <!--控制按钮-->
+            <p class="exzoom_btn"> <a href="javascript:void(0);" class="exzoom_prev_btn"> &lt; </a> <a href="javascript:void(0);" class="exzoom_next_btn"> &gt; </a> </p>
+        </div>
+        <script type="text/javascript">
+            $("#exzoom").exzoom({
+                autoPlay: false,
+            });//方法调用，务必在加载完后执行
+        </script>
+    </div>
+
+    <div class="conter_r">
+       <div class="conter_r_c">男装|休闲简约长袖套头连帽衫卫衣</div>
+        <div class="conter_r_z">款号：000513877</div>
+        <div class="conter_r_x">
+            <div class="conter_r_x_c">活动</div>
+            <div class="conter_r_x_b">单笔订单满229元免运费</div>
+        </div>
+        <div class="conter_r_p">
+            <span>￥198.00</span>
+            <span>￥298.00</span>
+        </div>
+        <div class="conter_r_v">
+            <span>颜色：</span>
+            <span>海军蓝</span>
+        </div>
+        <div class="size">
+            <div class="size_z">尺码：<span id="chooseSize"></span></div>
+            <div class="siza_chose">
+                <li class="sizeLi">167/123(XS)</li>
+                <li class="sizeLi">167/124(XS)</li>
+                <li class="sizeLi">167/125(XS)</li>
+                <li class="sizeLi">167/126(XS)</li>
+                <li class="sizeLi">167/126(XS)</li>
+                <li class="sizeLi">167/126(XS)</li>
+                <li class="sizeLi">167/126(XS)</li>
+
+            </div>
+        </div>
+        <div class="number">数量：<span id="nums">1</span></div>
+        <div class="addInput">
+            <button type="button" id="reduceNum">-</button>
+            <input type="text" id="number" value="1">
+            <button type="button" id="addNum">+</button>
+        </div>
+        <div class="addButton">
+            <span>加入购物车</span>
+            <span id="pay">立即购买</span>
+        </div>
+    </div>
+</div>
+<div class="showdea">
+    <span >商品说明</span>
+    <span id="plus">
+        <i class="plus1">+</i>
+        <i class="plus2">-</i>
+    </span>
+    <ul class="showdea_ul">
+        <li>衣长及臀</li>
+        <li>模特身高175厘米，尺码4号，穿着Gap常规S码</li>
+        <li>直筒版型，款式休闲</li>
+        <li>落肩长袖，贴边罗纹针织袖口</li>
+        <li>胸前刺绣徽标</li>
+        <li>毛边下摆</li>
+        <li>罗纹针织边饰圆领</li>
+    </ul>
+</div>
+<div class="xidi">
+    <span>洗涤说明</span>
+    <span id="plusa">
+        <i class="plus1">+</i>
+        <i class="plus2">-</i>
+    </span>
+    <ul class="xidi_ul">
+        <li>机洗</li>
+    </ul>
+</div>
+<div class="zhifu">
+    <span >商品说明</span>
+    <span id="plusz">
+        <i class="plus1">+</i>
+        <i class="plus2">-</i>
+    </span>
+    <ul class="zhifu_ul">
+      <li>网上支付:</li>
+        <li>网上支付方式可选择支付宝、微信或礼品卡支付。</li>
+        <li>运费优惠：</li>
+        <li>单笔订单满RMB 229即可享受免运费优惠（礼品卡订单除外）</li>
+    </ul>
+</div>
+<div class="like">
+    <span>您可能会喜欢</span>
+</div>
+
+<div class="footer"></div>
+
+</body>
+<script>
+    $("#pay").click(function () {
+         window.location.href="./shoppingCar.html"
+    })
+    $(".header").load("../common/header.html")
+    $(".footer").load("../common/footer.html")
+     $(".sizeLi").click(function () {
+       var val =$(this)[0].innerText;
+         $(".sizeLi").removeClass("red")
+         $(this).addClass("red")
+        $("#chooseSize")[0].innerText = val;
+     })
+    var num = 1;
+    $("#addNum").click(function () {
+        num +=1;
+        if(num>3){
+            num = 3;
+        }
+        $("#nums")[0].innerText = num
+        $("#number").val(num)
+
+    })
+    $("#reduceNum").click(function () {
+        num -=1;
+        if(num < 1){
+            num = 1;
+        }
+        $("#number").val(num)
+        $("#nums")[0].innerText = num
+
+    })
+    $("#plus").click(function () {
+        $(".showdea_ul").slideToggle();
+        $(".plus1").toggle()
+        $(".plus2").toggle()
+    })
+    $("#plusa").click(function () {
+        $(".xidi_ul").slideToggle();
+        $(".plus1").toggle()
+        $(".plus2").toggle()
+    })
+    $("#plusz").click(function () {
+        $(".zhifu_ul").slideToggle();
+        $(".plus1").toggle()
+        $(".plus2").toggle()
+    })
+
+</script>
+</html>

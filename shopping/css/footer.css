@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.footer{
+    margin-top: 20px;
+}
+.footerTop{
+   background-color: #0d2347;
+    height: 80px;
+}
+.footerTopC{
+    max-width: 1200px;
+    /*text-align: center;*/
+    margin: 0 auto;
+   
+}
+.footerTopC span{
+    display: inline-block;
+    color: #ccc; 
+    margin-top: 10px;
+    line-height: 20px;
+    margin-left: 30px;
+}
+.footerTopC span:nth-child(4){
+    margin-left: 168px!important;
+}
+.footerTopC span:nth-child(1){
+    margin-left: 100px!important;
+}
+.footers{
+   position: relative;
+}
+.footerTopC span:nth-child(2) input{
+    width:350px;
+    height:40px;
+
+}
+
+.footers i{
+    display: inline-block;
+    position:absolute;
+    right: 10px;
+    top: 30%;
+}
+.footerTopC span:nth-child(3) i{
+    font-size: 30px;
+}
+.footerTopC span:nth-child(1){
+   vertical-align: bottom;
+}
+.footerBottomCon{
+display: inline-block;
+width: 1228px;
+height: 300px;
+}
+.footerBottomNav{
+ display: inline-block;
+}
+.footerBottomNav p{
+ margin-top: 10px;
+ display: inline-block;
+ font-weight: bolder;
+ margin-left: 100px;
+}
+
+
+.footerBottomList1{
+    display: inline-block;
+    float: left;
+    margin-left: 100px;
+}
+.footerBottomList1 p{
+    font-size: 12px; 
+    padding: 10px 0px;
+  
+    
+}
+.footerBottomList2{
+display: inline-block;
+float: left;
+margin-left: 110px;
+}
+.footerBottomList2 p{
+    font-size: 12px; 
+    padding: 10px 0px;  
+}
+.footerBottomList3{
+    display: inline-block;
+    margin-left: 115px;
+    float: left;
+}
+.footerBottomList3 .List3T{
+font-size: 12px;
+margin-bottom: 5px;
+}
+.footerBottomList3 .List3T p{
+    padding: 10px 0;
+}
+.footerBottomList3 .List3B{
+font-size: 12px;
+
+}
+.footerBottomList3 .List3B p{
+    padding: 10px 0;
+}
+.footerBottomList4 {
+display: inline-block;
+}
+.footerBottomList4 .List4Img img{
+    width: 185px;
+    height: 133px;
+}
+.footerBottomList4 .List4Img{
+    margin-left: 30px;
+    margin-top: 10px;
+}
+.footerBottomList4 .but{
+    display: block;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 12px;
+    width: 80px;
+    height: 30px;
+    margin-left: 30px;
+}
+.footerBottomList4 .but span{
+    display: block;
+   text-align: center;
+   padding: 7px 0;
+  
+}
+.footerBottomList4 p{
+    font-size: 12px;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+.List5{
+    position: relative;
+}
+.but1{
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 12px;
+    width: 80px;
+    height: 30px;
+    position: absolute;
+    right: 350px;
+    top: -204px;
+}
+.but1 span{
+    display: block;
+   text-align: center;
+   padding: 10px 0; 
+}
+.List6{
+    display: block;
+   
+}
+.List6 .List6c{
+    position: relative;
+    display: block;
+    float: right;
+    right: 280px;
+    top: -140px;
+   
+    
+}
+.List6 .List6cImg{
+    display: block;
+    
+    
+}
+.List6 .List6cImg img{
+    position: relative;
+    display: block;
+    width: 170px;
+    height: 116px;
+    right: 116px;
+    top: -100px;
+    float: right;
+   
+}
+.List7{
+    display: block;
+   
+}
+.List7 img{
+    position: relative;
+    display: block;
+    width: 125px;
+    height: 143px;
+    right: -210px;
+    top: -200px;
+    float: right;
+}
+.footerBottomB{
+
+}
+.footerBottomBl{
+ width: 1200px;
+}
+.footerBottomBl p{
+    font-size: 12px;
+    text-align: center;
+    padding: 5px 0;
+}

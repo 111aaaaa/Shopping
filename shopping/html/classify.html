@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/classify.css">
+    <link rel="stylesheet" href="../css/jslider.css">
+    <link rel="stylesheet" href="../css/jslider.plastic.css">
+    <script src="../plugin/jquery-1.11.3.js"></script>
+    <script src="../plugin/jquery1.js"></script>
+    <script type="text/javascript" src="../plugin/jquery.dependClass.js"></script>
+    <script type="text/javascript" src="../plugin/jquery.slider-min.js"></script>
+</head>
+<body>
+<div class="header"></div>
+<div class="wrrap">
+    <div style="margin: 0 auto;width: 1200px;margin-top: 200px" class="banner">
+        <img src="https://uxresources.baozun.com/prod/88000136/20200205/D115F0F3093C4327249B55DD2FCEABFE.jpg">
+    </div>
+   <div class="wrapp_con">
+       <div class="wrapp_con_top">
+           <span class="fw_600 fs_24">男装</span>
+           <span style="margin-left: 10px" class="fs_14 s">[共1000件商品]</span>
+       </div>
+       <div class="wrapp_con_main">
+           <div class="wrapp_con_main_l">
+               <div class="con_l_top">
+                   <span>男装</span>
+                   <span id="plus">
+                        <i class="plus1">+</i>
+                        <i class="plus2">-</i>
+                    </span>
+
+               </div>
+               <ul class="con_l_top_ul">
+                   <li>卫衣</li>
+                   <li>女装</li>
+                   <li>女孩</li>
+                   <li>男孩</li>
+                   <li>幼儿</li>
+                   <li>婴儿</li>
+                   <li>孕妇装</li>
+               </ul>
+               <div class="wrapp_con_main_l_bo">
+                   <span>价格筛选</span>
+                   <span id="minus" onclick="fna()">
+                        <i class="minus1">+</i>
+                        <i class="minus2">-</i>
+                    </span>
+               </div>
+               <div class="price_slider">
+                   <div class="layout">
+                       <div class="layout-slider" style="width: 100%">
+                            <span style="display: inline-block; width: 180px; padding: 0 5px;">
+                                <input class="Slider1" type="slider" name="price" value="60;750" />
+                            </span>
+                       </div>
+                       <script type="text/javascript" charset="utf-8">
+                           jQuery(".Slider1").slider(
+                               { from: 60, to: 750,
+                                   step: 1, smooth: true,
+                                   round: 0, dimension: "&nbsp;",
+                                   skin: "plastic" });
+                           $(".jslider-pointer").mouseup(function () {
+                               var min = $(".jslider-value")[0].innerText
+                               var max = $(".jslider-value")[1].innerText
+                               $("#minPriceId").val(min)
+                               $("#maxPriceId").val(max)
+
+                               console.log($(".jslider-value")[0].innerText)
+                               console.log($(".jslider-value")[1].innerText)
+                           })
+
+
+
+
+                       </script>
+                   </div>
+                   <div class="price_area">
+                        <span class="min_price">
+                            <input id="minPriceId" type="text" value="60">
+                            <span>¥</span>
+                        </span>
+                       -
+                       <span class="max_price">
+                            <input id="maxPriceId" type="text" value="750">
+                            <span>¥</span>
+                        </span>
+                   </div>
+               </div>
+           </div>
+           </div>
+           <div class="wrapp_con_main_r">
+               <div class="wrapp_con_main_r_top">
+                   <div class="wrapp_con_main_r_top_l">
+                       <span><input type="checkbox">新品</span>
+                       <span><input type="checkbox">减价</span>
+                       <span><input type="checkbox">超值购</span>
+                   </div>
+                   <div class="wrapp_con_main_r_top_r">
+                       <span id="px">排序</span>
+                       <ul class="px_ul">
+                           <li class="px_li">默认</li>
+                           <li class="px_li">新品</li>
+                       </ul>
+                   </div>
+               </div>
+               <div class="wrapp_con_main_r_con">
+                   <div class="wrapp_con_main_r_con_a">
+                       <img src="https://uxresources.baozun.com/prod/88000136/20200120/7599479457387E7ED25DCA3E47F7F56C.jpg?x-oss-process=image/resize,m_pad,w_250,h_325" alt="">
+                       <div class="good_content">商品介绍商品介绍商品介绍商品介绍商品介绍商品介绍商品介绍</div>
+                       <div class="price">
+                           <span>$123</span>
+                           <span>$345</span>
+                       </div>
+                       <div class="bs">
+                           新品
+                       </div>
+                   </div>
+                   <div class="wrapp_con_main_r_con_a">
+                       <img src="https://uxresources.baozun.com/prod/88000136/20200120/7599479457387E7ED25DCA3E47F7F56C.jpg?x-oss-process=image/resize,m_pad,w_250,h_325" alt="">
+                       <div class="good_content">商品介绍商品介绍商品介绍商品介绍商品介绍商品介绍商品介绍</div>
+                       <div class="price">
+                           <span>$123</span>
+                           <span>$345</span>
+                       </div>
+                       <div class="bs">
+                           新品
+                       </div>
+                   </div>
+                   </div>
+               <div class="wrapp_con_main_r_con_a">
+                   <img src="https://uxresources.baozun.com/prod/88000136/20200120/7599479457387E7ED25DCA3E47F7F56C.jpg?x-oss-process=image/resize,m_pad,w_250,h_325" alt="">
+                   <div class="good_content">商品介绍商品介绍商品介绍商品介绍商品介绍商品介绍商品介绍</div>
+                   <div class="price">
+                       <span>$123</span>
+                       <span>$345</span>
+                   </div>
+                   <div class="bs">
+                       新品
+                   </div>
+               </div>
+               <div class="sp">
+                   <img  src="https://uxresources.baozun.com/prod/88000136/20200120/7599479457387E7ED25DCA3E47F7F56C.jpg?x-oss-process=image/resize,m_pad,w_250,h_325">
+                   <div class="spm">商品介绍商品介绍商品介绍商品介绍商品介绍商品介绍商品介绍</div>
+                   <div class="spmp">
+                       <span>$123</span>
+                       <span>$345</span>
+                   </div>
+                   <div  class="bss">
+                       新品
+                   </div>
+               </div>
+           </div>
+
+
+               </div>
+           </div>
+       </div>
+   </div>
+</div>
+<div class="footer"></div>
+
+</body>
+<script>
+    $(".header").load("../common/header.html")
+    $(".footer").load("../common/footer.html")
+    $("#plus").click(function () {
+        $(".con_l_top_ul").slideToggle();
+        $(".plus1").toggle()
+        $(".plus2").toggle()
+    })
+    $("#minus").click(function () {
+       $(".price_slider").slideToggle();
+       $(".minus1").toggle()
+        $(".minus2").toggle()
+    })
+    $("#px").click(function () {
+      $(".px_ul").show()
+
+    })
+    $(".px_li").click(function(){
+        $("#px")[0].innerText =  $(this)[0].innerText
+        $(".px_ul").hide()
+    })
+    $(".wrapp_con_main_r_con_a").click(function () {
+window.location.href="./goodsDetails.html"
+    })
+</script>
+</html>

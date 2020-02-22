@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>结算</title>
+    <link rel="stylesheet" href="../css/bag.css">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1632836_15tiodtt5fa.css">
+    <script src="../js/country.js"></script>
+    <script src="../plugin/jquery-1.11.3.js"></script>
+</head>
+<body>
+<div class="header">
+   <div class="hemain">
+     <div class="hemain_l">
+         <span id="car">< 返回购物袋</span>
+
+      <div class="hemain_b">
+         <span>G A P</span>
+      </div>
+       <div class="hemain_r">
+           <span>400-680-8517</span>
+           <span>
+               <i class="iconfont icon-kefu"></i>
+               在线客服</span>
+       </div>
+   </div>
+</div>
+<div class="conter">
+    <div class="conter_l">
+        <div class="conter_l_t">
+            <p>配送信息</p>
+        </div>
+        <div class="conter_l_wrap">
+          <div class="conter_l_wrap_tl">
+              <p>收件人</p>
+              <input style="margin-top: 10px;width: 270px;height: 30px" type="text" placeholder="请输入姓名">
+          </div>
+            <div class="conter_l_wrap_tr">
+                <p>手机号</p>
+                <input style="margin-top: 10px;width: 270px;height: 30px" type="text" placeholder="请输入手机号">
+            </div>
+            <div class="conter_l_wrap_b">
+               <div class="conter_l_wrap_b_l">
+                   <p>省</p>
+               </div>
+                <div class="conter_l_wrap_b_bo">
+                    <p>市</p>
+                </div>
+                <div class="conter_l_wrap_b_r">
+                    <p>区</p>
+                </div>
+            </div>
+            <div class="conter_l_wrap_s">
+                <select style="width: 180px;height: 25px" name="" id="country" onchange="countryFun()">
+                    <option value="">请选择省</option>
+                </select>
+                <select  style="width: 180px;height: 25px" name="" id="city" onchange="cityFun()">
+                    <option value="">请选择市</option>
+                </select>
+                <select  style="width: 197px;height: 25px" name="" id="area" onchange="areaFun()">
+                    <option value="">请选择区</option>
+                </select>
+            </div>
+            <div class="conter_l_wrap_x">
+                <p>详细地址</p>
+            </div>
+            <div style="width: 567px;height: 80px;margin-top: 5px" class="conter_l_wrap_m">
+                <textarea style="width: 560px;height: 78px;" placeholder="请输入详细地址"></textarea>
+            </div>
+            <div style="width: 100%;margin-top: 10px" class="conter_l_wrap_p">
+                <p>配送方式</p>
+            </div>
+            <div style="width: 100%;margin-top: 10px" class="conter_l_wrap_pf">
+                <span style="font-size: 14px">快递</span>
+                <span style="font-size: 14px;padding: 0 20px">免运费</span>
+            </div>
+        </div>
+        <div style="width: 880px;margin-top: 15px" class="bzl">
+            <div style="width: 100%;height: 50px;background-color: #f5f5f5;line-height: 50px" class="bzlt">
+                <span style="font-size: 20px;font-weight: 600">商品信息</span>
+            </div>
+            <div style="width: 880px;height:135px;overflow:scroll;margin: 0 auto;margin-top: 10px" class="bzlb">
+                <div style="width: 840px;">
+                 <img style="width: 100px;height: 130px;display: inline-block" src="../img/20.png">
+                <div style="display: inline-block;vertical-align: top" class="bzlbt">
+                    <p >Gap</p>
+                    <p >女装|Logo徽标连帽拉链卫衣外套</p>
+                    <p style="color: #cccccc;padding: 20px 0">165/88A(S)、麻灰色</p>
+                </div>
+                <div style="display: inline-block;vertical-align: top;position: relative;float: right;right: 242px" class="bzlc">
+                    <span style="display: inline-block">￥139.00</span>
+                </div>
+                <div style="display: inline-block;vertical-align: top;position: relative;float: right;right: -56px" class="bzld">
+                    <span style="display: inline-block">小计：￥139.00</span>
+                </div>
+                </div>
+
+                <div style="width: 840px;">
+                    <img style="width: 100px;height: 130px;display: inline-block" src="../img/20.png">
+                    <div style="display: inline-block;vertical-align: top" class="bzlbt">
+                        <p >Gap</p>
+                        <p >女装|Logo徽标连帽拉链卫衣外套</p>
+                        <p style="color: #cccccc;padding: 20px 0">165/88A(S)、麻灰色</p>
+                    </div>
+                    <div style="display: inline-block;vertical-align: top;position: relative;float: right;right: 242px" class="bzlc">
+                        <span style="display: inline-block">￥139.00</span>
+                    </div>
+                    <div style="display: inline-block;vertical-align: top;position: relative;float: right;right: -56px" class="bzld">
+                        <span style="display: inline-block">小计：￥139.00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="conter_r">
+        <div style="width: 308px;height: 50px;margin: 0 auto;line-height: 50px;border-bottom:1px solid #ccc" class="conter_r_t">
+            <span style="float: left;font-size: 20px">订单摘要</span>
+            <span style="float: right;font-size: 14px">已选0件商品</span>
+        </div>
+       <div style="width: 308px;height: 100px;margin: 0 auto;margin-top: 15px;border-bottom: 1px solid #ccc" class="conter_r_b">
+        <div style="width: 100%;height: 21px" class="conter_r_b_t">
+            <span style="float: left">商品总额</span>
+            <span style="float: right">￥0.00</span>
+        </div>
+           <div style="width: 100%;height: 21px;margin-top: 10px" class="conter_r_b_bo">
+               <span style="float: left;color: red">优惠</span>
+               <span style="float: right">￥0.00</span>
+           </div>
+           <div style="width: 100%;height: 21px;margin-top: 10px" class="conter_r_b_f">
+               <span style="float: left">运费</span>
+               <span style="float: right">免运费</span>
+           </div>
+
+       </div>
+      <div style="width: 308px;margin-top: 15px;height: 21px" class="conter_r_bt">
+          <span style="float: left">订单总额</span>
+          <span style="float: right">￥0.00</span>
+      </div>
+        <div style="width: 308px;margin-top: 20px;height: 21px" class="conter_r_ft">
+            <span style="font-size: 12px;float: right;border-bottom: 1px solid #0d2347;cursor: pointer">查看规则</span>
+            <span style="font-size: 12px;float: right;">下单即可能获得积分</span>
+        </div>
+        <div style="margin: 0 auto;margin-top: 20px;" class="conter_r_f">
+            <button id="sub" style="width: 300px;height: 40px;color:#ccc;margin-left: 2px;background-color: #0d2347;cursor: pointer">提交订单</button>
+        </div>
+    </div>
+    <div style="width: 310px;border:1px solid #ccc;float: right;margin-top: 30px;" class="conter_r_d">
+        <div style="width: 310px;margin-top: 10px;overflow: hidden;border-bottom: 1px solid #ccc" class="conter_r_d_t">
+            <span style="float: left">需要帮助?</span>
+            <span style="float: right;cursor: pointer" class="plus">
+                <i class="plus1c">+</i>
+                <i style="display: none" class="plus2c">-</i>
+            </span>
+            <ul style="list-style: none;margin-top: 30px;font-size: 14px;display: none" class="conter_r_d_t_ul">
+                <li>在线客服：07.00-22.00</li>
+                <li>售后服务热线：400-680-8517</li>
+            </ul>
+        </div>
+        <div style="width: 310px;margin-top: 20px;overflow: hidden;border-bottom: 1px solid #ccc" class="conter_r_d_b">
+            <span style="float: left">支付方式</span>
+            <span style="float: right;cursor: pointer" class="plus1">
+                <i class="plus1a">+</i>
+                <i style="display: none" class="plus2a">-</i>
+            </span>
+            <ul style="margin-top: 25px;padding: 0 20px;display: none"class="conter_r_d_b_ul">支付宝    微信   礼品卡</ul>
+        </div>
+        <div style="width: 310px;margin-top: 20px;overflow: hidden;border-bottom: 1px solid #ccc" class="conter_r_d_f">
+            <span style="float: left">退换货政策</span>
+            <span style="float: right;cursor: pointer" class="plus2">
+                <i class="plus1aa">+</i>
+                <i style="display: none" class="plus2aa">-</i>
+            </span>
+            <ul style="margin-top: 25px;padding: 0 20px;display: none"class="conter_r_d_f_ul">
+                我们提供完善的售后服务，承诺自顾客签收商品之日（以签收快递日期为准）起15天内（减价商品和正价商品)，如对商品有任何不满意，我们将提供无理由退换货服务。以初上市吊牌价销售的商品退换货费用全免（不包括参与限时促销的正价商品和减价商品）。更多详情
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="footer"></div>
+</body>
+</html>
+<script>
+    $("#sub").click(function () {
+      window.location.href="./pay.html"
+    })
+    $("#car").click(function () {
+        window.location.href="./shoppingcar.html"
+    })
+    $(".plus").click(function () {
+   $(".conter_r_d_t_ul").slideToggle()
+        $(".plus1c").toggle()
+        $(".plus2c").toggle()
+    })
+    $(".plus1").click(function () {
+        $(".conter_r_d_b_ul").slideToggle()
+        $(".plus1a").toggle()
+        $(".plus2a").toggle()
+    })
+    $(".plus2").click(function () {
+        $(".conter_r_d_f_ul").slideToggle()
+        $(".plus1aa").toggle()
+        $(".plus2aa").toggle()
+    })
+    $(".footer").load("../common/footer.html")
+    var coun ="";
+    for (let i=0;i<country.length;i++){
+        coun += '<option value="">'+country[i].name+'</option>'
+
+    }
+    // console.log(coun)
+    $("#country").append(coun)
+    function countryFun() {
+
+        var  index = $("#country").children('option:selected').index()-1;
+        $("#city").children().not(':eq(0)').remove()
+        var leng = country[index].city.length;
+        var  city ="";
+        for (let i=0;i<leng;i++){
+            city += '<option value="">'+country[index].city[i].name+'</option>'
+
+        }
+        $("#city").append(city)
+    }
+    function cityFun() {
+        var index1 = $("#country").children('option:selected').index()-1
+        var index2 = $("#city").children('option:selected').index()-1
+        var len = country[index1].city[index2].area.length;
+        $("#area").children().not(':eq(0)').remove()
+        var area = '';
+        for(let i=0;i<len;i++){
+            area+=`<option value="">`+country[index1].city[index2].area[i]+`</option>`
+        }
+        $("#area").append(area)
+    }
+    function areaFun() {
+        var index1 = $("#country").children('option:selected').index()-1
+        var index2 = $("#city").children('option:selected').index()-1
+        var index3 = $("#area").children('option:selected').index()-1
+        console.log(country[index1].name,"省")
+        console.log(country[index1].city[index2].name,"市")
+        console.log(country[index1].city[index2].area[index3],"区")
+    }
+
+</script>

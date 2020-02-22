@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="33fb9d54-5315-4ebb-b931-8a606af7adfd" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1XhjpS7uCIvYmazXFIHxIhoPgUw" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../2" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\Desktop\shopping\img\fdj" />
+      <recent name="C:\Users\Administrator\Desktop\shopping\css" />
+      <recent name="C:\Users\Administrator\Desktop\shopping\img" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\Desktop\朱东霞\shopping\img" />
+      <recent name="C:\Users\Administrator\Desktop\shopping\img" />
+      <recent name="C:\Users\Administrator\Desktop\shopping\html" />
+      <recent name="C:\Users\Administrator\Desktop\shopping\img\fdj" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="33fb9d54-5315-4ebb-b931-8a606af7adfd" name="Default Changelist" comment="" />
+      <created>1581505402859</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1581505402859</updated>
+      <workItem from="1581505405777" duration="102000" />
+      <workItem from="1581554549307" duration="573000" />
+      <workItem from="1581557683413" duration="1168000" />
+      <workItem from="1581563347582" duration="13374000" />
+      <workItem from="1581588030412" duration="44000" />
+      <workItem from="1581642471900" duration="13674000" />
+      <workItem from="1581670067913" duration="122000" />
+      <workItem from="1581670352485" duration="216000" />
+      <workItem from="1581729051818" duration="327000" />
+      <workItem from="1581729685283" duration="3086000" />
+      <workItem from="1581732839745" duration="17240000" />
+      <workItem from="1581901994867" duration="27279000" />
+      <workItem from="1581987792579" duration="21182000" />
+      <workItem from="1582074914135" duration="3016000" />
+      <workItem from="1582078643765" duration="15090000" />
+      <workItem from="1582267826106" duration="8346000" />
+      <workItem from="1582332755621" duration="764000" />
+      <workItem from="1582340339293" duration="1633000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1044" y="483" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1581988562488">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="1044" y="483" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1032@0.0.1920.1032" timestamp="1581988562488" />
+    <state x="945" y="177" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1581754444435">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="945" y="177" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1581754444435" />
+    <state x="1102" y="314" key="FileChooserDialogImpl" timestamp="1582340723806">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="1102" y="314" key="FileChooserDialogImpl/0.0.1920.1032@0.0.1920.1032" timestamp="1582340723806" />
+    <state x="700" y="0" width="840" height="1030" key="search.everywhere.popup" timestamp="1582016082520">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="700" y="0" width="840" height="1030" key="search.everywhere.popup/0.0.1920.1032@0.0.1920.1032" timestamp="1582016082520" />
+  </component>
+</project>

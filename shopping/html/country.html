@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>三级联动</title>
+    <script src="../js/country.js"></script>
+    <script src="../plugin/jquery-1.11.3.js"></script>
+</head>
+<body>
+<select name="" id="country" onchange="countryFun()">
+    <option value="">请选择省</option>
+</select>
+<select name="" id="city" onchange="cityFun()">
+    <option value="">请选择市</option>
+</select>
+<select name="" id="area" onchange="areaFun()">
+    <option value="">请选择区</option>
+</select>
+</body>
+</html>
+<script>
+   var coun ="";
+   for (let i=0;i<country.length;i++){
+       coun += '<option value="">'+country[i].name+'</option>'
+
+   }
+   // console.log(coun)
+   $("#country").append(coun)
+    function countryFun() {
+
+        var  index = $("#country").children('option:selected').index()-1;
+        $("#city").children().not(':eq(0)').remove()
+        var leng = country[index].city.length;
+        var  city ="";
+        for (let i=0;i<leng;i++){
+            city += '<option value="">'+country[index].city[i].name+'</option>'
+
+        }
+  $("#city").append(city)
+    }
+   function cityFun() {
+       var index1 = $("#country").children('option:selected').index()-1
+       var index2 = $("#city").children('option:selected').index()-1
+       var len = country[index1].city[index2].area.length;
+       $("#area").children().not(':eq(0)').remove()
+       var area = '';
+       for(let i=0;i<len;i++){
+           area+=`<option value="">`+country[index1].city[index2].area[i]+`</option>`
+       }
+       $("#area").append(area)
+   }
+   function areaFun() {
+       var index1 = $("#country").children('option:selected').index()-1
+       var index2 = $("#city").children('option:selected').index()-1
+       var index3 = $("#area").children('option:selected').index()-1
+       console.log(country[index1].name,"省")
+       console.log(country[index1].city[index2].name,"市")
+       console.log(country[index1].city[index2].area[index3],"区")
+   }
+</script>

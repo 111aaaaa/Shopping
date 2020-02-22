@@ -1,0 +1,181 @@
+.wrapp_con{
+    overflow: hidden;
+}
+.wrapp_con .wrapp_con_top{
+ width: 1200px;
+    margin: 0 auto;
+}
+.wrapp_con_main{
+    width: 1200px;
+    margin: 0 auto;
+
+
+
+}
+.wrapp_con_main .wrapp_con_main_l{
+    width: 180px;
+    border-top: 1px solid #cccccc;
+    margin-top: 15px;
+   float: left;
+
+
+}
+.wrapp_con_main .wrapp_con_main_l .con_l_top{
+
+    margin-top: 15px;
+    overflow: hidden;
+}
+.wrapp_con_main .wrapp_con_main_l .con_l_top_ul{
+   list-style: none;
+   margin-left: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.wrapp_con_main .wrapp_con_main_l .con_l_top_ul li{
+    font-size: 14px;
+    color: #ccc;
+    padding: 5px 0;
+}
+.wrapp_con_main .wrapp_con_main_l .con_l_top span:nth-child(1){
+    font-weight: 600;
+}
+.wrapp_con_main .wrapp_con_main_l .con_l_top span:nth-child(2){
+    padding: 0 5px;
+    cursor: pointer;
+    float: right;
+}
+.wrapp_con_main .wrapp_con_main_l .con_l_top span:nth-child(2) .plus1{
+    display: none;
+}
+.wrapp_con_main .wrapp_con_main_l .wrapp_con_main_l_bo{
+    border-top:  1px solid #cccccc;
+    overflow: hidden;
+}
+.wrapp_con_main .wrapp_con_main_l .wrapp_con_main_l_bo span{
+    display: inline-block;
+  padding: 15px 0;
+}
+.wrapp_con_main .wrapp_con_main_l .wrapp_con_main_l_bo span:nth-child(1){
+
+
+}
+.wrapp_con_main .wrapp_con_main_l .wrapp_con_main_l_bo span:nth-child(2){
+   float: right;
+    cursor: pointer;
+
+}
+.wrapp_con_main .wrapp_con_main_l .wrapp_con_main_l_bo span:nth-child(2) .minus1{
+    display: none;
+
+}
+.wrapp_con_main .wrapp_con_main_l .price_slider .price_area{
+    display: flex;
+}
+.wrapp_con_main .wrapp_con_main_l .price_slider .price_area .min_price{
+    display: inline-block;
+    width: 80px;
+    height: 15px;
+    position: relative;
+}
+.wrapp_con_main .wrapp_con_main_l .price_slider .price_area .min_price input{
+    width: 80%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding-left: 15px;
+}
+.wrapp_con_main .wrapp_con_main_l .price_slider .price_area .min_price  span{
+    position: absolute;
+    left: 5px;
+    font-size: 14px;
+}
+.wrapp_con_main .wrapp_con_main_l .price_slider .price_area .max_price{
+    display: inline-block;
+    width: 80px;
+    height: 15px;
+    position: relative;
+}
+.wrapp_con_main .wrapp_con_main_l .price_slider .price_area .max_price span{
+    position: absolute;
+    left: 5px;
+    font-size: 14px;
+}
+.wrapp_con_main .wrapp_con_main_l .price_slider .price_area .max_price input{
+    width: 80%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding-left: 15px;
+}
+.wrapp_con .wrapp_con_main .wrapp_con_main_r{
+    width: 1000px;
+    float: right;
+
+}
+ .wrapp_con_main_r .wrapp_con_main_r_top{
+  position: relative;
+}
+ .wrapp_con_main_r .wrapp_con_main_r_top .wrapp_con_main_r_top_l
+{
+   margin-left: 230px;
+
+
+}
+.wrapp_con_main_r .wrapp_con_main_r_top .wrapp_con_main_r_top_l span:nth-child(1){
+
+}
+.wrapp_con_main_r .wrapp_con_main_r_top .wrapp_con_main_r_top_r{
+  position: absolute;
+   float: right;
+    right: 30px;
+}
+.wrapp_con_main_r .wrapp_con_main_r_top .wrapp_con_main_r_top_r span{
+    cursor: pointer;
+}
+.wrapp_con_main_r .wrapp_con_main_r_top .wrapp_con_main_r_top_r ul{
+    list-style: none;
+    display: none;
+    cursor: pointer;
+    width: 40px;
+    height: 60px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+}
+.wrapp_con_main_r .wrapp_con_main_r_top .wrapp_con_main_r_top_r ul li{
+    padding: 5px 0;
+}
+.wrapp_con_main_r .wrapp_con_main_r_con{
+    display: inline-block;
+}
+.wrapp_con_main_r .wrapp_con_main_r_con_a{
+    display: inline-block;
+}
+.wrapp_con_main_r .wrapp_con_main_r_con_a .good_content{
+    width: 300px;
+    margin-left: 40px;
+
+}
+.wrapp_con_main_r .wrapp_con_main_r_con_a  .price{
+    margin-left: 40px;
+
+}
+.wrapp_con_main_r .wrapp_con_main_r_con_a .bs{
+    margin-left: 40px;
+}
+.wrapp_con_main_r  .sp img{
+    display: block;
+ margin-left: 230px;
+}
+.wrapp_con_main_r  .sp .spm{
+    margin-left: 230px;
+    width: 300px;
+}
+.wrapp_con_main_r  .sp  .spmp{
+    display: block;
+    margin-left: 230px;
+}
+.wrapp_con_main_r  .sp .bss{
+    margin-left: 230px;
+}

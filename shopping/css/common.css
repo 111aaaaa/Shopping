@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.l_float{
+    float: left;
+}
+.l_right{
+    float: right;
+}
+.ccc{
+    color: #cccccc;
+}
+.fff{
+    color: #ffffff;
+}
+.s{
+    color: #333333;
+
+}
+.fs_14{
+    font-size: 14px;
+}
+.fs_18{
+    font-size: 18px;
+}
+.fs_24{
+    font-size: 24px;
+}
+.col_3{
+    color: #333;
+}
+.fw_600{
+    font-weight: 600;
+}
+.fs_400{
+    font-weight: 400;
+}
+.fs_12{
+    font-size: 12px;
+}
+.col_9{
+    color: #999999;
+}

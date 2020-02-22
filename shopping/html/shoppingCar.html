@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/shoppingCar.css">
+    <script src="../plugin/jquery-1.11.3.js"></script>
+</head>
+<body>
+<div class="header"></div>
+<div class="conter">
+ <div class="conter_car">
+     <span>我的购物袋</span>
+     <span>[共2件商品]</span>
+ </div>
+    <div class="conter_car_con">
+        <div class="conter_car_con_l">
+            <div class="conter_car_con_l_z">
+            <div class="conter_car_con_l_nav">
+                <input style="cursor: pointer" type="checkbox" name="checkboxAll">
+                <span>全选</span>
+            </div>
+            <div class="conter_car_con_l_nl">
+                <span>商品属性</span>
+                <span>数量</span>
+                <span>金额</span>
+            </div>
+            </div>
+            <div class="conter_car_con_l_t">
+                <span>Gap</span>
+            </div>
+            <div style="width: 840px;height: 192px" class="sc1">
+            <div class="conter_car_con_l_g">
+                <div class="conter_car_con_l_g_l">
+                    <input style="width: 15px;height: 15px;cursor:pointer;vertical-align: top;" type="checkbox" name="checkbox">
+                    <img style="width: 130px;height: 173px" src="https://uxresources.baozun.com/prod/88000136/20190814/BD2B37B5C326B9CD4E33925AEB83B7EC.JPG">
+                </div>
+                <div style="margin-left: 65px" class="conter_car_con_l_g_m">
+                    <div style="margin-top: 10px" class="conter_car_con_l_g_m_t">
+                        <div>Gap</div>
+                        <div>女装|Logo徽标连帽拉链卫衣外套</div>
+                    </div>
+                    <div style="margin-top: 15px" class="conter_car_con_l_g_m_b">
+                        <div><span style="color: #cccccc">颜色 :</span> 麻灰色</div>
+                        <div><span style="color: #cccccc">尺码 :</span> 165/84A(XS)</div>
+                    </div>
+                    <div style="margin-top: 15px" class="conter_car_con_l_g_m_p">
+                        <span>￥:198.00</span>
+                        <span style="color: #cccccc;text-decoration: line-through">￥:398.00</span>
+                    </div>
+                    <div style="margin-top: 15px" class="conter_car_con_l_g_m_f">
+                        <span style="font-size: 14px;cursor: pointer">编辑</span>
+                        <span class="del1" style="font-size: 14px;padding: 0 30px;cursor: pointer">删除</span>
+                    </div>
+                </div>
+            </div>
+            <div class="conter_car_con_l_n">
+                <button style="cursor: pointer" type="button" id="reduceNum">-</button>
+                <input  type="text" id="number" value="1">
+                <button style="cursor: pointer" type="button" id="addNum">+</button>
+            </div>
+            <div class="conter_car_con_l_m">
+                <span>￥：198</span>
+            </div>
+            </div>
+            <div style="width: 840px;height: 192px" class="sc">
+            <div class="conter_car_con_l_g">
+                <div class="conter_car_con_l_g_l">
+                    <input style="width: 15px;height: 15px;vertical-align: top;cursor: pointer" type="checkbox" name="checkbox">
+                    <img style="width: 130px;height: 173px" src="https://uxresources.baozun.com/prod/88000136/20191206/D44446BD86C66FDA1683B0BE3D5D0AAB.jpg?x-oss-process=image/interlace,1/resize,m_pad,w_486,h_648">
+                </div>
+                <div style="margin-left: 65px" class="conter_car_con_l_g_m">
+                    <div style="margin-top: 10px" class="conter_car_con_l_g_m_t">
+                        <div>Gap</div>
+                        <div>女装|Logo徽标连帽拉链卫衣外套</div>
+                    </div>
+                    <div style="margin-top: 15px" class="conter_car_con_l_g_m_b">
+                        <div><span style="color: #cccccc">颜色 :</span> 麻灰色</div>
+                        <div><span style="color: #cccccc">尺码 :</span> 165/84A(XS)</div>
+                    </div>
+                    <div style="margin-top: 15px" class="conter_car_con_l_g_m_p">
+                        <span>￥:198.00</span>
+                        <span style="color: #cccccc;text-decoration: line-through">￥:398.00</span>
+                    </div>
+                    <div style="margin-top: 15px" class="conter_car_con_l_g_m_f">
+                        <span style="font-size: 14px;cursor: pointer">编辑</span>
+                        <span class="del" style="font-size: 14px;padding: 0 30px;cursor: pointer">删除</span>
+                    </div>
+                </div>
+            </div>
+            <div class="conter_car_con_l_n">
+                <button style="cursor: pointer" type="button" id="reduceNum1">-</button>
+                <input  type="text" id="number1" value="1">
+                <button style="cursor: pointer" type="button" id="addNum1">+</button>
+            </div>
+            <div class="conter_car_con_l_m">
+                <span>￥：198</span>
+            </div>
+            </div>
+        </div>
+        <div class="conter_car_con_r">
+         <div style=" margin-left:5px;width: 302px;height: 35px;margin-top: 10px;border-bottom: 1px solid #ccc" class="conter_car_con_r_t">
+             <span style="font-size: 20px;float: left">订单摘要</span>
+             <span style="font-size: 14px;float: right">已选两件商品</span>
+         </div>
+            <div style="margin-top: 10px;width: 302px;height: 35px;margin-left: 5px" class="conter_car_con_r_b">
+                <span style="float: left">商品总额</span>
+                <span style="float: right">￥:0.00</span>
+            </div>
+            <div style="margin-top: 10px;width: 302px;height: 35px;border-bottom: 1px solid #ccc;margin-left: 5px" class="conter_car_con_r_bc">
+                <span style="float: left;color: red">优惠</span>
+                <span style="float: right;color: red">￥:0.00</span>
+            </div>
+            <div style="margin-top: 10px;margin-left: 5px;width: 302px;height: 35px" class="conter_car_con_r_f">
+                <input style="width: 230px;height: 30px" type="text" placeholder="请输入优惠码">
+                <button style="float: right;width: 60px;height: 30px;cursor: pointer">使用</button>
+
+            </div>
+            <div style="width: 302px;height: 70px;margin-left:5px;margin-top: 10px;border-bottom: 1px solid #ccc" class="conter_car_con_r_m">
+                <p>立即 <button style="cursor: pointer">登录</button>使用优惠券/码和抵扣积分并累计积分
+
+                    不是会员？ <button style="cursor: pointer">立即 </button>注册获取欢迎礼券，享会员权益</p>
+            </div>
+            <div  style="margin-top: 10px;margin-left: 5px;width: 302px;height: 35px" class="conter_car_con_r_zo">
+                <span style="float: left">订单总金额</span>
+                <span style="float: right">￥:0.00</span>
+            </div>
+            <div style="margin-top: 20px;margin-left: 5px;width: 302px;height: 35px" class="conter_car_con_r_j">
+                <button id="jies" style="width: 280px;cursor: pointer;height: 40px;margin-left: 20px;background-color: #0d2347">立即结算</button>
+
+            </div>
+            <div style="margin-top: 20px;margin-left: 5px;width: 302px;height: 35px" class="conter_car_con_r_j">
+                <button  style="width: 280px;cursor: pointer;height: 40px;margin-left: 20px">继续购物</button>
+
+            </div>
+        </div>
+<!--        <div style="width: 334px;height: 150px;border: 1px solid #cccccc;float: right" class="conter_car_con_r_q">-->
+<!--          <div style="width: 330px;height: 30px;border-bottom: 1px solid #ccc;margin-top: 5px" class="conter_car_con_r_w">-->
+<!--              <span style="float: left">需要帮助?</span>-->
+<!--              <span style="float: right;cursor: pointer" class="zbz">+</span>-->
+<!--              <span style="float: right;cursor: pointer" class="zbz1">-</span>-->
+<!--          </div>-->
+<!--            <div style="width: 300px;margin-left: 5px ;margin-top: 10px;display:none" class="bz">-->
+<!--                <p>在线客服:07.00-22.00</p>-->
+<!--            </div>-->
+<!--        </div>-->
+        <div style="width: 334px;height: 150px;margin-top:5px;border: 1px solid #cccccc;float: right" class="bz">
+            <div style="width: 320px;height:30px;border-bottom:1px solid #cccccc;margin-left: 10px;margin-top: 5px" class="bz1">
+                <span>需要帮助?</span>
+                <span style="float: right;cursor: pointer" class="bzt">
+                    <i class="plus1">+</i>
+                    <i style="display: none" class="plus2">-</i>
+                </span>
+                <ul style="margin-top: 5px;list-style: none;display: none;margin-top: 10px" class="bz_ul">
+                    <li style="color: #cccccc">服务时间:07.00-22.00</li>
+                </ul>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="footer"></div>
+
+</body>
+<script>
+    $("#jies").click(function () {
+    window.location.href="./bag.html"
+    })
+  $(".bzt").click(function () {
+      $(".bz_ul").slideToggle();
+      $(".plus1").toggle()
+      $(".plus2").toggle()
+
+  })
+    $(".del").click(function () {
+        $(".sc").remove()
+    })
+    $(".del1").click(function () {
+        $(".sc1").remove()
+    })
+    $(".header").load("../common/header.html")
+    $(".footer").load("../common/footer.html")
+    var  num=1;
+    $("#addNum").click(function () {
+        num +=1;
+        if(num>3){
+            num = 3;
+        }
+
+        $("#number").val(num)
+
+    })
+    $("#reduceNum").click(function () {
+        num -=1;
+        if(num<1){
+            num = 1;
+        }
+
+        $("#number").val(num)
+
+    })
+    $("#addNum1").click(function () {
+        num +=1;
+        if(num>3){
+            num = 3;
+        }
+
+        $("#number1").val(num)
+
+    })
+    $("#reduceNum1").click(function () {
+        num -=1;
+        if(num<1){
+            num = 1;
+        }
+
+        $("#number1").val(num)
+
+    })
+//全选
+    $("input[name='checkboxAll']").click(function(){
+        var inputLen = $("input[name='checkbox']").length;
+        if($(this)[0].checked){
+            for (let i =0;i<inputLen;i++){
+                $("input[name='checkbox']")[i].checked=true
+            }
+
+        }
+        else{
+            for (let i =0;i<inputLen;i++){
+                $("input[name='checkbox']")[i].checked=false
+            }
+        }
+    })
+    //是否全选
+    $("input[name='checkbox']").click(function(){
+        var checkLen = $("input[name='checkbox']:checked").length;//获取下面选中的数量
+        var inputLen = $("input[name='checkbox']").length;//获取下面多选框的数量
+        if(checkLen===inputLen){
+            $('input[name="checkboxAll"]')[0].checked=true
+        }
+        else{
+            $('input[name="checkboxAll"]')[0].checked=false
+        }
+    })
+</script>
+</html>

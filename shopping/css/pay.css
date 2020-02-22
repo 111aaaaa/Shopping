@@ -1,0 +1,85 @@
+.header{
+    width: 100%;
+    border-bottom: 2px solid #ccc;
+    position: fixed;
+  height: 52px;
+    z-index: 11;
+    background-color: #f5f5f5;
+}
+.header .hemain{
+    width: 1200px;
+    height: 50px;
+    margin: 0 auto;
+    line-height: 50px;
+    /*position: relative;*/
+}
+.header .hemain .hemain_l{
+    display: inline-block;
+    cursor: pointer;
+}
+.header .hemain .hemain_l span:hover{
+    color: #0d2347;
+}
+.header .hemain .hemain_b{
+    display: inline-block;
+    position: relative;
+    right: -450px;
+    font-size: 20px;
+    color: #0d2347;
+    font-family: inherit
+}
+.header .hemain .hemain_r{
+    display: inline-block;
+    float: right;
+    position: relative;
+    right: -843px;
+
+}
+.conter{
+ overflow: hidden;
+}
+.conter .conterw{
+    width: 980px;
+    /*height: 1200px;*/
+    margin: 0 auto;
+
+    margin-top: 75px;
+}
+.conter .conterw .paycode{
+    width: 510px;
+    height: 243px;
+    margin: 0 auto;
+    /*border: 1px solid yellow;*/
+    margin-top: 30px;
+}
+.conter .conterw .paycode .paycodeimg{
+    display: inline-block;
+}
+.conter .conterw .ddh{
+    width: 100%;
+    height: 148px;
+    background-color: #f5f5f5;
+}
+.conter .conterw .ddh p{
+    padding: 7px 0;
+    font-size: 14px;
+    margin-left: 10px;
+}
+.conter .conterw .paycode .payr{
+    width: 266px;
+    height: 80px;
+    /*border: 1px solid blue;*/
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 60px;
+    margin-left: 10px;
+}
+.conter .conterw .sumr{
+    width: 302px;
+    height: 133px;
+
+    margin-top: 15px;
+    float: right;
+    background-color: #f5f5f5;
+
+}

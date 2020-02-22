@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1632836_15tiodtt5fa.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <script src="../plugin/jquery-1.11.3.js"></script>
+    <link rel="stylesheet" href="../css/header.css">
+</head>
+<body>
+<div class="header">
+<div class="headerMain">
+    <div class="headerTop">
+        <div class="headerTop1">
+            <div class="left">
+                <span>GAP</span>
+                <span>OLD NAVY</span>
+            </div>
+            <div class="right">
+                <span>售后服务热线</span>
+                <span>400-680-8517</span>
+                <span>
+                    <i class="iconfont icon-kefu" ></i>
+                    在线客服
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="headerBottom">
+        <div class="headerBottomL">
+            <img src="https://gap-cn-node.oss-cn-shanghai.aliyuncs.com/casaba_plus_assets/prod-2020.2.3-1/static/new-logo-gap.51297b42e37aa2bf88d3c5d0b0e6d093.gif">
+        </div>
+        <div class="headerBottomR">
+            <div class="headerBottomR_t">
+                    <span class="sp"  style="cursor: pointer" onclick="goLogin()">
+                     <i class="iconfont icon-ren111"></i>
+                    注册/登录
+                        <ul style="list-style: none;float: right;position: relative;right: 200px;margin-top: 18px;width: 80px;height: 150px;background-color: #fff;color: #ccc;display:none;border: 1px solid #ccc" class="clist">
+                    <li onclick="goperson(0)">我的账户</li>
+                    <li onclick="goperson(5)">我的订单</li>
+                    <li onclick="goperson(3)">积分</li>
+                    <li onclick="goperson(4)">优惠券</li>
+                    <li >退出登录</li>
+                </ul>
+                    </span>
+                <span style="cursor: pointer">
+                        <i class="iconfont icon-gouwudai"></i>
+                        我的购物袋
+                    </span>
+
+            </div>
+            <div class="headerBottomR_b">
+                <input type="text" placeholder="搜索关键词">
+                <i class="iconfont icon-search1"></i>
+            </div>
+        </div>
+
+    </div>
+</div>
+</div>
+<div class="comNav">
+    <div class="comNavcon">
+        <span class="comNav_span">首页</span>
+        <span class="comNav_span1" onclick="tz()">新品</span>
+        <span>牛仔型格</span>
+        <span>女装</span>
+        <span>男装</span>
+        <span>女孩</span>
+        <span>男孩</span>
+        <span>婴儿</span>
+        <span>幼儿</span>
+        <span>Sale</span>
+    </div>
+
+    <div class="shhii">
+        <div class="shhi">
+            <ul class="shhi_ul">
+                <li>分类索引</li>
+                <li>女装</li>
+                <li>女装</li>
+                <li>男装</li>
+                <li>男装</li>
+            </ul>
+            <img src="https://uxresources.baozun.com/prod/88000136/20200117/AE72699D9C3C33E97F7A721A042DEF52.jpg" alt="">
+        </div>
+
+    </div>
+</div>
+</div>
+</body>
+<script>
+
+    function goLogin(){
+        window.location.href="../html/login.html"
+    }
+    $(".comNav_span").mouseover(function(){
+        $(".shhii").css("display","block")
+    })
+    $(".comNav_span").mouseout(function(){
+        $(".shhii").css("display","none")
+    })
+    $(".comNav_span1").mouseover(function(){
+        $(".shhii1").css("display","block")
+    })
+    $(".comNav_span1").mouseout(function(){
+        $(".shhii1").css("display","none")
+    })
+    function tz() {
+   window.location.href="../html/classify.html"
+    }
+    function goperson(val){
+        window.location.href = `../html/person.html?type=`+val;
+        event.stopPropagation()
+    }
+    $(".comNavcon span").click(function () {
+        window.location.href="../html/classify.html"
+    })
+</script>
+</html>
